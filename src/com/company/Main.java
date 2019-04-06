@@ -7,17 +7,20 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         Scanner sc = new Scanner (System.in);
-
+        int hasil=0;
         System.out.print("Input : ");
         int input = sc.nextInt();
 
         System.out.println();
 
+
         System.out.println("output : ");
         for (int i = 1; i <= input; i++) {
             int x = cari(i);
-            System.out.print(x + " ");
+            hasil+=x;
+
         }
+        System.out.print(hasil + " ");
 
     }
 
